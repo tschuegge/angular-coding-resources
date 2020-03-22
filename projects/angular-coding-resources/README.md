@@ -1,6 +1,8 @@
 Angular Coding Resources
 ========================
-Library für den Angular Programmier Kurs von Jürg Danuser.
+Library für den Angular Programmier Kurs von Jürg Danuser. 
+
+[Dokumentation](https://tschuegge.github.io/angular-coding-resources/)
 
 Installation
 ------------
