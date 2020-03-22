@@ -2,6 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 
 /**
  * Zeigt einen Kreis an
+ *
+ * @example
+ * <acr-colored-circle [size]="150" [color]="'red'"></acr-colored-circle>
  */
 
 @Component({

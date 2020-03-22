@@ -30,21 +30,22 @@
                <div class="content getting-started">
                    <div class="content-data">
 
-<h1 id="angularcodingresourceslibrary">AngularCodingResourcesLibrary</h1>
-<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 9.0.7.</p>
-<h2 id="development-server">Development server</h2>
-<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
-<h2 id="code-scaffolding">Code scaffolding</h2>
-<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
-<h2 id="build">Build</h2>
-<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>--prod</code> flag for a production build.</p>
-<h2 id="running-unit-tests">Running unit tests</h2>
-<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
-<h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
-<p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.</p>
-<h2 id="further-help">Further help</h2>
-<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>
+<h1 id="angular-coding-resources">Angular Coding Resources</h1>
+<p>Library für den Angular Programmier Kurs von Jürg Danuser.</p>
+<h2 id="installation">Installation</h2>
+<p>Die Library kann über npm installiert werden: <code>npm install @tschuegge/angular-coding-resources</code></p>
+<h2 id="verwendung">Verwendung</h2>
+<p>Das Library-Modul kann im Root-Modul geladen werden.</p>
+<div><pre class="line-numbers"><code class="language-ts">// Root Module (src/app.module.ts)
 
+import { AngularCodingResourcesModule } from &#39;&#64;tschuegge/angular-coding-resources&#39;;
+
+// ...
+imports: [
+  AngularCodingResourcesModule
+],
+// ...</code></pre></div><p>Danach kann beispielsweise die ColoredCircleComponent in den Templates verwendet werden.</p>
+<div><pre class="line-numbers"><code class="language-html">&lt;acr-colored-circle [size]=&quot;150&quot; [color]=&quot;&#39;red&#39;&quot;&gt;&lt;/acr-colored-circle&gt;</code></pre></div>
 
 
 
