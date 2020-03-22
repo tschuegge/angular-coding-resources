@@ -1,0 +1,14 @@
+{
+  "name": "@tschuegge/angular-coding-resources",
+  "author": {
+    "name": "Jürg Danuser"
+  },
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "description": "Library für den Angular Programmier Kurs von Jürg Danuser",
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7",
+    "tslib": "^1.10.0"
+  }
+}

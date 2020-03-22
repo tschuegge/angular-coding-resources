@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@tschuegge/angular-coding-resources": [
+        "dist/angular-coding-resources",
+        "projects/angular-coding-resources/src/public-api" // if not built, use lib directly (with hot reloading)
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
