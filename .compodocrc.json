@@ -2,5 +2,8 @@
   "$schema": "./node_modules/@compodoc/compodoc/src/config/schema.json",
   "tsconfig": "projects/angular-coding-resources/tsconfig.lib.json",
   "name": "Angular Coding Resources",
-  "output": "docs"
+  "output": "docs",
+  "theme": "readthedocs",
+  "hideGenerator": true,
+  "disableDependencies": true
 }
