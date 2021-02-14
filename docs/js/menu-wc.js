@@ -44,11 +44,6 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <span class="icon ion-ios-paper"></span>LICENSE
                             </a>
                         </li>
-                                <li class="link">
-                                    <a href="dependencies.html" data-type="chapter-link">
-                                        <span class="icon ion-ios-list"></span>Abhängigkeiten
-                                    </a>
-                                </li>
                     </ul>
                 </li>
                     <li class="chapter modules">
@@ -65,13 +60,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AngularCodingResourcesModule.html" data-type="entity-link">AngularCodingResourcesModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-AngularCodingResourcesModule-60a5c928b1be6959500d0f61bef66f4d"' : 'data-target="#xs-components-links-module-AngularCodingResourcesModule-60a5c928b1be6959500d0f61bef66f4d"' }>
+                                            'data-target="#components-links-module-AngularCodingResourcesModule-6c199f4ab0b0766f4eb5b64213be4ed0"' : 'data-target="#xs-components-links-module-AngularCodingResourcesModule-6c199f4ab0b0766f4eb5b64213be4ed0"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AngularCodingResourcesModule-60a5c928b1be6959500d0f61bef66f4d"' :
-                                            'id="xs-components-links-module-AngularCodingResourcesModule-60a5c928b1be6959500d0f61bef66f4d"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AngularCodingResourcesModule-6c199f4ab0b0766f4eb5b64213be4ed0"' :
+                                            'id="xs-components-links-module-AngularCodingResourcesModule-6c199f4ab0b0766f4eb5b64213be4ed0"' }>
                                             <li class="link">
                                                 <a href="components/ColoredCircleComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">ColoredCircleComponent</a>
@@ -83,12 +78,6 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                 </li>
                     <li class="chapter">
                         <a data-type="chapter-link" href="coverage.html"><span class="icon ion-ios-stats"></span>Dokumentation Abdeckung</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="copyright">
-                        Dokumentation generiert mit <a href="https://compodoc.app/" target="_blank">
-                            <img data-src="images/compodoc-vectorise.png" class="img-responsive" data-type="compodoc-logo">
-                        </a>
                     </li>
             </ul>
         </nav>
