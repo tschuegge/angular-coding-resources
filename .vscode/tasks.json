@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "build",
+			"detail": "ng build --prod"
+		},
+		{
+			"type": "npm",
+			"script": "doc",
+			"problemMatcher": [],
+			"label": "generate doc",
+			"detail": "npx compodoc --language de-DE"
+		},
+		{
+			"type": "npm",
+			"script": "npmpublish",
+			"problemMatcher": [],
+			"label": "publish to npm",
+			"detail": "ng build --prod && npx compodoc --language de-DE && cpx \"./{README.md,CHANGELOG.md}\" ./projects/angular-coding-resources -u && npm publish ./dist/angular-coding-resources --access public"
+		},
+		{
+			"type": "npm",
+			"script": "npmpublish-dry",
+			"problemMatcher": [],
+			"label": "npm: npmpublish-dry",
+			"detail": "ng build --prod && npx compodoc --language de-DE && cpx \"./{README.md,CHANGELOG.md}\" ./projects/angular-coding-resources -u"
+		}
+	]
+}

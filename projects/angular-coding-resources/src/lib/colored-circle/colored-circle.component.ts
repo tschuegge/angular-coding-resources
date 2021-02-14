@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 /**
  * Zeigt einen Kreis an
@@ -14,7 +14,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ColoredCircleComponent {
 
   /**
-   * CSS kompatibler Farbname: https://developer.mozilla.org/de/docs/Web/CSS/Farben#Farbschlüsselwörter
+   * CSS kompatibler Farbname: https://developer.mozilla.org/de/docs/Web/CSS/Farben#farbschlüsselwörter
    */
   @Input()
   color = 'lightgray';
