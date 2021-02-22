@@ -13,15 +13,21 @@ Verwendung
 Das Library-Modul kann im Root-Modul geladen werden.
 
 ```ts
-// Root Module (src/app.module.ts)
+// Root Module (Datei: src/app.module.ts)
 
+// AngularCodingResourcesModule vom npm-Package importieren
 import { AngularCodingResourcesModule } from '@tschuegge/angular-coding-resources';
 
-// ...
-imports: [
-  AngularCodingResourcesModule
-],
-// ...
+// AngularCodingResourcesModule im Root-Modul registrieren
+@NgModule({
+  // ...
+  imports: [
+    // ...
+    AngularCodingResourcesModule // AngularCodingResourcesModule im Array "imports" hinzufügen
+  ],
+  // ...
+})
+export class AppModule { }
 ```
 
 Danach kann beispielsweise die ColoredCircleComponent in den Templates verwendet werden.

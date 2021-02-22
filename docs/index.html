@@ -38,15 +38,21 @@
 <p>Die Library kann über npm installiert werden: <code>npm install @tschuegge/angular-coding-resources</code></p>
 <h2 id="verwendung">Verwendung</h2>
 <p>Das Library-Modul kann im Root-Modul geladen werden.</p>
-<div><pre class="line-numbers"><code class="language-ts">// Root Module (src/app.module.ts)
+<div><pre class="line-numbers"><code class="language-ts">// Root Module (Datei: src/app.module.ts)
 
+// AngularCodingResourcesModule vom npm-Package importieren
 import { AngularCodingResourcesModule } from &#39;&#64;tschuegge/angular-coding-resources&#39;;
 
-// ...
-imports: [
-  AngularCodingResourcesModule
-],
-// ...</code></pre></div><p>Danach kann beispielsweise die ColoredCircleComponent in den Templates verwendet werden.</p>
+// AngularCodingResourcesModule im Root-Modul registrieren
+&#64;NgModule({
+  // ...
+  imports: [
+    // ...
+    AngularCodingResourcesModule // AngularCodingResourcesModule im Array &quot;imports&quot; hinzufügen
+  ],
+  // ...
+})
+export class AppModule { }</code></pre></div><p>Danach kann beispielsweise die ColoredCircleComponent in den Templates verwendet werden.</p>
 <div><pre class="line-numbers"><code class="language-html">&lt;acr-colored-circle [size]=&quot;150&quot; [color]=&quot;&#39;red&#39;&quot;&gt;&lt;/acr-colored-circle&gt;</code></pre></div>
 
 
